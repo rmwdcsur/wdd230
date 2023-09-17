@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development" />
+    <meta name="description" content="WDD 230 - Web Frontend Development. Santiago Risso. Course assignment portal." />
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profile.jpg" alt="my profile picture">
+        <h1>Santiago Risso</h1>
+    </header>
+
+    <nav>
+        <!-- "Home", "Site Plan", "Chamber", "BYU-Idaho", and "Scripture"-->
+        <a href="#">Home</a>
+        <a href="chamber/siteplan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a>
+    </nav>
+
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <hr>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul class="list">
+                <li>
+                    <a href="#">Anchors</a>
+                </li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <h4>Number of visits: 98354</h4>
+            <h4>Current temperature in Montevideo is 22 degress Celsius</h4>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <!--The copyright symbol and current year where the year will be dynamically populated using JavaScript code-->
+            Santiago Risso - &copy <span id="year"></span>
+            Uruguay
+        </p>
+        <p>
+            last modified:
+        </p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
