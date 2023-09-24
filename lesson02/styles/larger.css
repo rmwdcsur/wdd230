@@ -1,0 +1,47 @@
+@media screen and (min-width: 600px) {
+
+    header {
+        width: 600px;
+    }
+
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .fullwidth {
+        width: 700px;
+        align-self: center;
+    }
+
+    .fullwidth img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+        width: 900px;
+    }
+
+    main {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .card {
+        margin: 10px;
+        width: 300px;
+    }
+
+    .fullwidth {
+        width: 300px;
+    }
+
+    .fullwidth img {
+        width: 100%;
+    }
+}
