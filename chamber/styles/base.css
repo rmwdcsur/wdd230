@@ -1,6 +1,6 @@
 nav {
-    background-color: black;
-    display: grid
+    display: grid;
+    background-color: #23395b;
 }
 
 nav a {
@@ -8,6 +8,10 @@ nav a {
     text-decoration: none;
     text-align: center;
     padding: 1rem;
+}
+
+#logolink {
+    display: inline;
 }
 
 
