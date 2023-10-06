@@ -1,0 +1,26 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        color: red;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}

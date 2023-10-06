@@ -1,0 +1,81 @@
+nav {
+    background-color: black;
+    display: grid
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #23395b;
+    position: absolute;
+    left: 400px;
+    top: 20px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #23395b;
+    color: #fff;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+
+}
