@@ -33,6 +33,12 @@
         margin: 10px;
     }
 
+    .logolink {
+        position: absolute;
+        background-color: white;
+
+    }
+
 
 }
 
