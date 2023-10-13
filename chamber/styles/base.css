@@ -165,7 +165,7 @@ main {
 }
 
 .stuff {
-    margin: .5m;
+    margin: .5em;
     border: 1px solid rgba(0, 0, 0, .1);
     background-color: #bed;
     max-width: 580px;
