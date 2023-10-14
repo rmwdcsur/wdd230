@@ -21,12 +21,10 @@
 </head>
 
 <body>
-
     <header>
         <img src="images/profile.jpg" alt="my profile picture">
         <h1>Santiago Risso</h1>
     </header>
-
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
@@ -39,66 +37,38 @@
             </li>
         </ul>
     </nav>
-
     <main>
         <h2 class="title">WDD 230: Web Frontend Development</h2>
-
-
-        <section class="card1">
+        <section class="card activities">
             <h3>Learning Activities</h3>
             <ul class="list">
-                <li>
-                    <a href="lesson01/media-query.html">Lesson 01</a>
-                </li>
-                <li>
-                    <a href="lesson02/design.html">Lesson 02</a>
-                </li>
-                <li>
-                    <a href="lesson02/design-principles.html">Lesson 02 - Design Principles</a>
-                </li>
-                <li>
-                    <a href="images/Exercise3-CombinatorSelector.jpg">Lesson 03 - Combinator Exercise</a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/Santiago-Risso/pen/zYyaORb">Codepen Activity</a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/Santiago-Risso/pen/NWezYpB">Codepen Hamburger Button Activity</a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/Santiago-Risso/pen/GRPYXLG">Codepen Activity: Pseudo-Classes</a>
-                </li>
-                <li>
-                    <a href="chamber/index.html">Lesson 04: Chamber Site</a>
-                </li>
-                <li>
-                    <a href="lesson05/bom.html">Lesson 05: BOM Top 10</a>
-                </li>
+                <li><a href="lesson01/media-query.html">Lesson 01</a></li>
+                <li><a href="lesson02/design.html">Lesson 02</a></li>
+                <li><a href="lesson02/design-principles.html">Lesson 02 - Design Principles</a></li>
+                <li><a href="images/Exercise3-CombinatorSelector.jpg">Lesson 03 - Combinator Exercise</a></li>
+                <li><a href="https://codepen.io/Santiago-Risso/pen/zYyaORb">Codepen Activity</a></li>
+                <li><a href="https://codepen.io/Santiago-Risso/pen/NWezYpB">Codepen Hamburger Button Activity</a></li>
+                <li><a href="https://codepen.io/Santiago-Risso/pen/GRPYXLG">Codepen Activity: Pseudo-Classes</a></li>
+                <li><a href="chamber/index.html">Lesson 04: Chamber Site</a></li>
+                <li><a href="lesson05/bom.html">Lesson 05: BOM Top 10</a></li>
             </ul>
         </section>
-        <section class="card2">
+        <section class="card information">
             <h3>Information</h3>
             <h4>Number of visits: 98354</h4>
             <h4>Current temperature in Montevideo is 22 degress Celsius</h4>
         </section>
-        <span class="card3">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54772.41832651058!2d-55.59491201503002!3d-30.9069045276594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9feec4125885f%3A0xf22b95e7bd8ced7a!2s40000%20Rivera%2C%20Rivera%20Department!5e0!3m2!1sen!2suy!4v1695952962515!5m2!1sen!2suy"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </span>
-
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54772.41832651058!2d-55.59491201503002!3d-30.9069045276594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9feec4125885f%3A0xf22b95e7bd8ced7a!2s40000%20Rivera%2C%20Rivera%20Department!5e0!3m2!1sen!2suy!4v1695952962515!5m2!1sen!2suy"
+            width="1" height="1" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
 
+
     <footer>
-        <p>
-            <!--The copyright symbol and current year where the year will be dynamically populated using JavaScript code-->
-            Santiago Risso - &copy; <span id="year"></span>
-            Uruguay
-        </p>
-        <p>
-            last modified: <span id="lastmodified"></span>
-        </p>
+        <p>&copy; <span id="year"></span> | Santiago Risso | Rivera, UY</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgerbtn.js"></script>
