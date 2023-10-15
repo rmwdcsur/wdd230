@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(0, 0, 95);
+    background-color: #23395b;
     padding: 1rem;
     height: auto;
     margin: auto;
@@ -18,9 +18,12 @@ header {
 
 .logo {
     position: absolute;
-    background-color: white;
-    border-radius: 10%;
+    background-color: #8ea8c3;
+    border-radius: 35%;
+    border: 2px solid #cbf7ed;
     padding: 10px;
+    padding-top: 6px;
+    margin-top: 1rem;
     margin-left: 10%;
     width: 60px;
 }
@@ -30,6 +33,7 @@ header {
     max-width: 100%;
     height: auto;
     opacity: 0.8;
+
 }
 
 iframe {
@@ -38,19 +42,22 @@ iframe {
 }
 
 .home-title {
-    position: absolute;
-    margin-top: -200px;
+    position: sticky;
+    margin-top: -55%;
     color: white;
     font-family: var(--heading-font);
 }
 
 .button-box {
     background-color: #333;
+    position: sticky;
     border-radius: 5px;
-    position: absolute;
     opacity: 0.8;
-    margin-top: -100px;
+    max-width: 90px;
+    margin: auto;
+    margin-top: 33%;
     padding: 15px;
+    margin-bottom: 40px;
 }
 
 .button-box:hover {
@@ -65,7 +72,7 @@ iframe {
 }
 
 nav {
-    background-color: rgb(0, 0, 95);
+    background-color: #23395b;
 
 }
 
@@ -80,12 +87,12 @@ main {
     text-align: center;
 }
 
-.card1,
-.card2 {
-    /* Add shadows to create the "card" effect */
+.events,
+.spotlights {
+    padding: 10px;
+    margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    height: 400px;
 }
 
 
@@ -106,6 +113,29 @@ main {
     text-align: left;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #23395b;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+    grid-column: 1/2;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: -45px;
+}
+
+.social img {
+    padding: 2px;
+}
+
 /* small view navigation */
 #menu {
     font-size: 2rem;
@@ -114,7 +144,7 @@ main {
     background-color: #eee;
     color: #000;
     margin-left: 80%;
-    margin-top: 0.9rem;
+    margin-top: 1.9rem;
 }
 
 #menu::before {
@@ -129,7 +159,7 @@ main {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: rgb(0, 0, 95);
+    background-color: #23395b;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
