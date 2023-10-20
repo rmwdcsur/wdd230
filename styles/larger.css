@@ -3,6 +3,12 @@
         max-width: fit-content;
     }
 
+
+    .hero img {
+        width: 100%;
+
+    }
+
     header {
         padding-left: 20%;
         padding-right: 20%
@@ -30,12 +36,13 @@
         font-weight: 700;
     }
 
-    main {
+    .content {
         margin: auto;
         max-width: 80%;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
     }
+
 
     .title {
         grid-column: 1/3;
@@ -61,6 +68,10 @@
     header {
         padding-left: 38%;
         padding-right: 30%;
+    }
+
+    .hero img {
+        width: 100%;
     }
 
     header h1 {
