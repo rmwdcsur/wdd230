@@ -6,6 +6,7 @@
 
     .hero img {
         width: 100%;
+        object-fit: cover;
 
     }
 
@@ -41,6 +42,11 @@
         max-width: 80%;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
+    }
+
+    main {
+        margin: auto;
+        max-width: 80%;
     }
 
 
