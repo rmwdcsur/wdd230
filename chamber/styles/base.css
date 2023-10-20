@@ -9,6 +9,14 @@ body {
     width: auto;
 }
 
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 header {
     background-color: #23395b;
     padding: 1rem;
