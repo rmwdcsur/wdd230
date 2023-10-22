@@ -24,7 +24,7 @@
     </div>
     <header>
         <a class="logolink" href="index.html">
-            <img class="logo" src="images/logo.png" alt="chamber site logo">
+            <img class="logo" src="images/logo.webp" alt="chamber site logo">
         </a>
         <nav>
             <button id="menu"></button>
@@ -40,7 +40,13 @@
     <main>
         <div class="hero">
             <div class="hero-box">
-                <img class="hero-img" src="images/chamber-heroimg.jpg" alt="Main plaza">
+                <!-- <img class="hero-img" src="images/chamber-heroimg.jpg" alt="Main plaza"> -->
+                <picture>
+                    <source src="images/wdd230-org-small.webp" media="(max-width: 400px)">
+                    <source src="images/wdd230-org-medium.webp" media="(max-width: 768px)">
+                    <source src="images/wdd230-org-large.webp" media="(max-width: 960px)">
+                    <img src="images/wdd230-org-large.webp" alt="WDD230 photo">
+                </picture>
             </div>
             <section class="hero-msg">
                 <h1 class="home-title">Rivera's Chamber of Commerce</h1>

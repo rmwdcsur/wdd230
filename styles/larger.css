@@ -93,4 +93,8 @@
     main {
         max-width: 1100px;
     }
+
+    .hero {
+        max-width: 960px;
+    }
 }
