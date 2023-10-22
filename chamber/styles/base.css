@@ -11,8 +11,8 @@ body {
 
 #mode {
     position: absolute;
-    top: 1rem;
     right: 1rem;
+    top: 1.5rem;
     font-size: 3rem;
     cursor: pointer;
 }
@@ -36,7 +36,12 @@ header {
     width: 60px;
 }
 
-.hero-img,
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-box,
 .building {
     max-width: 100%;
     height: auto;
@@ -96,7 +101,8 @@ main {
 }
 
 .events,
-.spotlights {
+.spotlights,
+.weather {
     padding: 10px;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -151,8 +157,8 @@ footer p {
     padding: 3px 7px 6px;
     background-color: #eee;
     color: #000;
-    margin-left: 80%;
-    margin-top: 1.9rem;
+    margin-left: 65%;
+    margin-top: 2rem;
 }
 
 #menu::before {

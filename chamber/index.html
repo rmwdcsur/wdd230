@@ -42,9 +42,9 @@
             <div class="hero-box">
                 <!-- <img class="hero-img" src="images/chamber-heroimg.jpg" alt="Main plaza"> -->
                 <picture>
-                    <source src="images/wdd230-org-small.webp" media="(max-width: 400px)">
-                    <source src="images/wdd230-org-medium.webp" media="(max-width: 768px)">
-                    <source src="images/wdd230-org-large.webp" media="(max-width: 960px)">
+                    <source srcset="images/wdd230-org-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/wdd230-org-medium.webp" media="(max-width: 768px)">
+                    <source srcset="images/wdd230-org-large.webp" media="(max-width: 960px)">
                     <img src="images/wdd230-org-large.webp" alt="WDD230 photo">
                 </picture>
             </div>
@@ -65,11 +65,11 @@
                     </ul>
 
                 </section>
-                <section class="wheather">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54772.41832651058!2d-55.59491201503002!3d-30.9069045276594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9feec4125885f%3A0xf22b95e7bd8ced7a!2s40000%20Rivera%2C%20Rivera%20Department!5e0!3m2!1sen!2suy!4v1695952962515!5m2!1sen!2suy"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="weather">
+                    <h3>Weather Info:</h3>
+                    <p>The current temperature is: <span id="degrees">49</span>°F</p>
+                    <p>Current wind is: <span id="wind">12</span>km/h</p>
+                    <p>It feels like: <span id="windchill"></span></p>
                 </section>
                 <section class="spotlights">
                     <h3>Spotlights</h3>
@@ -81,14 +81,19 @@
                 </section>
                 <section class="calltoaction">
                     <div class="background"></div>
-                    <img class="building" src="images/chamber-building.jpg" alt="building">
+                    <img class="building" src="images/chamber-building.webp" alt="building">
                     <section class="msg">
                         <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatem!
                             Necessitatibus.</p>
                         <a class="joinus" href="#">Join Us</a>
                     </section>
+
                 </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54772.41832651058!2d-55.59491201503002!3d-30.9069045276594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9feec4125885f%3A0xf22b95e7bd8ced7a!2s40000%20Rivera%2C%20Rivera%20Department!5e0!3m2!1sen!2suy!4v1695952962515!5m2!1sen!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
@@ -120,6 +125,7 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburgerbtn.js"></script>
         <script src="scripts/scripts.js"></script>
+        <script src="scripts/windchill.js"></script>
     </footer>
 
 </body>
