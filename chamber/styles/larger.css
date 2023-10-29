@@ -31,7 +31,7 @@
     .discover {
         display: grid;
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: repeat(7 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 30px;
 
         padding-left: 16rem;
@@ -54,6 +54,7 @@
         max-width: 500px;
         grid-column: 2/3;
         grid-row: 1/7;
+        margin-bottom: 20px;
     }
 
     .discover-images img {
