@@ -41,6 +41,11 @@ header {
     height: auto;
 }
 
+.discover-images img {
+    width: 100%;
+    height: auto;
+}
+
 .hero-box,
 .building {
     max-width: 100%;
@@ -215,6 +220,10 @@ footer p {
     max-width: 580px;
     height: 100vh;
 
+}
+
+.title {
+    text-align: center;
 }
 
 /* calendar */
