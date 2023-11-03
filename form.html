@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development">
+    <meta name="description" content="WDD 230 - Web Frontend Development. Santiago Risso. Form Page.">
+    <meta property="og:title" content="WDD 230 - Form Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aronda.com.br/wp-content/uploads/2018/09/83207753-1200x1200.jpg">
+    <meta property="og:url" content="https://rmwdcsur.github.io/wdd230/">
+
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>Santiago Risso - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profile.webp" alt="my profile picture" width="150">
+        <h1>Santiago Risso</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="form">Registration Form</h1>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <fieldset class="form">
+                <legend>Data</legend>
+                <label class="top">Username* <input type="text" name="username" value="Your name" maxlength="40"
+                        required></label>
+                <label class="top">Password* <input type="password" id="password" name="password" value="password"
+                        pattern="[A-Za-z0-9]{8,20}"
+                        title="Must be at least eight (8) characters long of alpha-numeric characters"
+                        maxlength="20"></label>
+                <label class="top">Re-type* <input type="password" id="password2" name="password2" value="password"
+                        pattern="[A-Za-z0-9]{8,20}"
+                        title="Must be at least eight (8) characters long of alpha-numeric characters"
+                        maxlength="20"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@domain.com"
+                        pattern="[a-z0-9._%+\-]+@byui+\.[a-z]{3}$" title="Please enter a valid email address"
+                        required></label><br>
+                <label class="rating">Page rating <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="10" />
+                        <label for="star-a"></label>
+                        <input type="radio" name="stars" id="star-b" value="9" />
+                        <label for="star-b"></label>
+                        <input type="radio" name="stars" id="star-c" value="8" />
+                        <label for="star-c"></label>
+                        <input type="radio" name="stars" id="star-d" value="7" />
+                        <label for="star-d"></label>
+                        <input type="radio" name="stars" id="star-e" value="6" />
+                        <label for="star-e"></label>
+                        <input type="radio" name="stars" id="star-f" value="5" />
+                        <label for="star-f"></label>
+
+                        <input type="radio" name="stars" id="star-g" value="4" />
+                        <label for="star-g"></label>
+
+                        <input type="radio" name="stars" id="star-h" value="3" />
+                        <label for="star-h"></label>
+
+                        <input type="radio" name="stars" id="star-i" value="2" />
+                        <label for="star-i"></label>
+
+                        <input type="radio" name="stars" id="star-j" value="1" />
+                        <label for="star-j"></label>
+                    </div></label>
+            </fieldset>
+            <input type="submit" value="Register" class="submitBtn">
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Santiago Risso | Rivera, UY</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgerbtn.js"></script>
+    <script src="scripts/formscripts.js"></script>
+
+</body>
+
+</html>
