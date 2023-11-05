@@ -8,16 +8,6 @@ input:invalid {
     color: black;
 }
 
-.form {
-    width: 22rem;
-}
-
-main {
-    width: 500px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
 #formmessage {
     visibility: none;
     margin-top: 10px;
@@ -125,5 +115,17 @@ form input.submitBtn {
     .star-rating input:checked~label:before {
         font-size: 36px;
         line-height: 21px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .form {
+        width: 22rem;
+    }
+
+    main {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 }
