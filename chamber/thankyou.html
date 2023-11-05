@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development">
+    <meta name="description" content="Rivera's Chamber of Commerce site.">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Rivera's Chamber of Commerce</title>
+    <meta property="og:title" content="WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aronda.com.br/wp-content/uploads/2018/09/83207753-1200x1200.jpg">
+    <meta property="og:url" content="https://rmwdcsur.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div id="mode">
+        🌙
+    </div>
+    <header>
+        <a class="logolink" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="chamber site logo">
+        </a>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html" target="_blank">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="form">Registration Form</h1>
+        <p>Thank you for Joining!.</p>
+    </main>
+
+
+    <footer>
+        <p>
+            <!--The copyright symbol and current year where the year will be dynamically populated using JavaScript code-->
+            Santiago Risso - &copy; <span id="year"></span>
+            - Address: Route 5 Km 492, Uruguay
+        </p>
+        <p>
+            Last modified: <span id="lastmodified"></span>
+        </p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb_icon.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter_icon.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram_icon.png" alt="instagram icon">
+            </a>
+        </div>
+
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburgerbtn.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </footer>
+
+</body>
+
+</html>

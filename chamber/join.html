@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development">
+    <meta name="description" content="Rivera's Chamber of Commerce site.">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Rivera's Chamber of Commerce</title>
+    <meta property="og:title" content="WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aronda.com.br/wp-content/uploads/2018/09/83207753-1200x1200.jpg">
+    <meta property="og:url" content="https://rmwdcsur.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div id="mode">
+        🌙
+    </div>
+    <header>
+        <a class="logolink" href="index.html">
+            <img class="logo" src="images/logo.webp" alt="chamber site logo">
+        </a>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html" target="_blank">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-main">
+        <h1 class="form">Join the Chamber</h1>
+        <div id="formmessage"></div>
+        <form method="get" action="thankyou.html">
+            <fieldset class="form">
+                <legend>Registration Form</legend>
+                <label class="top">Firstname* <input type="text" name="firstname" maxlength="30" required></label>
+                <label class="top">Lastname* <input type="text" id="lastname" name="lastname" maxlength="30"></label>
+                <label class="top">Title/possition* <input type="text" id="title" name="title" value="title/possition"
+                        pattern="[A-Za-z\- ]{7,30}"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@domain.com"
+                        pattern="[a-z0-9._%+\-]+@+[a-z]{2,10}\.[a-z]{2,}$" title="Please enter a valid email address"
+                        required></label><br>
+                <label class="top">Mobile number* <input type="telephone" id="telephone" name="telephone"
+                        maxlength="30"></label>
+                <label class="top">Business/Organization's name* <input type="text" id="organization"
+                        name="organization" maxlength="30" required></label>
+
+                <label class="membership" id="typelbl">Membership Type<div class="membership-types"
+                        id="membershipTypes">
+                        <input type="radio" name="mem-type" id="membership-d" value="4" required />
+                        <label for="membership-d">NP (none profit)</label>
+
+                        <input type="radio" name="mem-type" id="membership-c" value="3" />
+                        <label for="membership-c">Bronze</label>
+
+                        <input type="radio" name="mem-type" id="membership-b" value="2" />
+                        <label for="membership-b">Silver </label>
+
+                        <input type="radio" name="mem-type" id="membership-a" value="1" />
+                        <label for="membership-a">Gold </label>
+                    </div>
+                </label>
+                <input type="time" name="timestamp" id="timestamp" hidden="true" />
+                <label class="top" for="organization-desc">Business/Organization's description</label>
+                <textarea id="organization-desc" name="organization-desc" maxlength="30"></textarea>
+            </fieldset>
+            <input type="submit" value="Join" class="submitBtn">
+        </form>
+        <div class="benefits">
+            <p id="benefits">test</p>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>
+            <!--The copyright symbol and current year where the year will be dynamically populated using JavaScript code-->
+            Santiago Risso - &copy; <span id="year"></span>
+            - Address: Route 5 Km 492, Uruguay
+        </p>
+        <p>
+            Last modified: <span id="lastmodified"></span>
+        </p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb_icon.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter_icon.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram_icon.png" alt="instagram icon">
+            </a>
+        </div>
+
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburgerbtn.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </footer>
+
+</body>
+
+</html>

@@ -227,3 +227,107 @@ footer p {
 }
 
 /* calendar */
+
+/* FORM */
+input:valid {
+    background-color: lightgreen;
+    color: black;
+}
+
+input:invalid {
+    background-color: pink;
+    color: black;
+}
+
+#formmessage {
+    visibility: none;
+    margin-top: 10px;
+    /*padding: 0.5rem; */
+    color: red;
+}
+
+.form h1 {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9c2c13;
+}
+
+/* ------------ FORM  ----------------------------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+form label.membership input {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+
+}
+
+.membership-types {
+    display: flex;
+    margin: auto;
+    font-size: 1rem;
+    border-radius: 4px;
+    gap: 5px;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.membership {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: auto;
+    margin-left: -100px;
+    max-width: 20rem;
+}
+
+form textarea {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    max-width: 20rem;
+    margin: auto;
+}

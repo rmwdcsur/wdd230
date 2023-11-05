@@ -52,3 +52,11 @@ if (visitDate.getFullYear() < 1970) {
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("dateVisited-ls", today);
+
+
+// Code to show the benefits
+
+let radButtons = document.querySelectorAll("input[name=mem-type]");
+radButtons.radButtons.forEach(rb => rb.addEventListener("change", function () {
+    console.log("click");
+}));

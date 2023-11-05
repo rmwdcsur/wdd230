@@ -69,6 +69,16 @@
     .discover-images img:hover {
         filter: blur(0px);
     }
+
+    .form {
+        width: 22rem;
+    }
+
+    #form-main {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
 }
 
 .card img {
