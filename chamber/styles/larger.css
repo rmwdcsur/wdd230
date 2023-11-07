@@ -75,10 +75,28 @@
     }
 
     #form-main {
-        width: 500px;
+        width: 900px;
         margin: 0 auto;
         margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 50px;
     }
+
+    .benefits {
+        grid-row: 2/2;
+    }
+
+    .benefitsection {
+        margin-top: 200px;
+        width: 90%;
+    }
+
+    .formside {
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+
 }
 
 .card img {

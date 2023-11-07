@@ -38,47 +38,52 @@
     </header>
 
     <main id="form-main">
-        <h1 class="form">Join the Chamber</h1>
-        <div id="formmessage"></div>
-        <form method="get" action="thankyou.html">
-            <fieldset class="form">
-                <legend>Registration Form</legend>
-                <label class="top">Firstname* <input type="text" name="firstname" maxlength="30" required></label>
-                <label class="top">Lastname* <input type="text" id="lastname" name="lastname" maxlength="30"></label>
-                <label class="top">Title/possition* <input type="text" id="title" name="title" value="title/possition"
-                        pattern="[A-Za-z\- ]{7,30}"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@domain.com"
-                        pattern="[a-z0-9._%+\-]+@+[a-z]{2,10}\.[a-z]{2,}$" title="Please enter a valid email address"
-                        required></label><br>
-                <label class="top">Mobile number* <input type="telephone" id="telephone" name="telephone"
-                        maxlength="30"></label>
-                <label class="top">Business/Organization's name* <input type="text" id="organization"
-                        name="organization" maxlength="30" required></label>
+        <div class="formside">
+            <h1 class="form">Join the Chamber</h1>
+            <div id="formmessage"></div>
+            <form name="joinForm" method="get" action="thankyou.html">
+                <fieldset class="form">
+                    <legend>Registration Form</legend>
+                    <label class="top">Firstname* <input type="text" name="firstname" maxlength="30" required></label>
+                    <label class="top">Lastname* <input type="text" id="lastname" name="lastname"
+                            maxlength="30"></label>
+                    <label class="top">Title/possition* <input type="text" id="title" name="title"
+                            value="title/possition" pattern="[A-Za-z\- ]{7,30}"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@domain.com"
+                            pattern="[a-z0-9._%+\-]+@+[a-z]{2,10}\.[a-z]{2,}$"
+                            title="Please enter a valid email address" required></label><br>
+                    <label class="top">Mobile number* <input type="telephone" id="telephone" name="telephone"
+                            maxlength="30"></label>
+                    <label class="top">Business/Organization's name* <input type="text" id="organization"
+                            name="organization" maxlength="30" required></label>
 
-                <label class="membership" id="typelbl">Membership Type<div class="membership-types"
-                        id="membershipTypes">
-                        <input type="radio" name="mem-type" id="membership-d" value="4" required />
-                        <label for="membership-d">NP (none profit)</label>
+                    <label class="membership" id="typelbl">Membership Type<div class="membership-types"
+                            id="membershipTypes">
+                            <input type="radio" name="memtype" id="membership-d" value="4" required />
+                            <label for="membership-d">NP (none profit)</label>
 
-                        <input type="radio" name="mem-type" id="membership-c" value="3" />
-                        <label for="membership-c">Bronze</label>
+                            <input type="radio" name="memtype" id="membership-c" value="3" />
+                            <label for="membership-c">Bronze</label>
 
-                        <input type="radio" name="mem-type" id="membership-b" value="2" />
-                        <label for="membership-b">Silver </label>
+                            <input type="radio" name="memtype" id="membership-b" value="2" />
+                            <label for="membership-b">Silver </label>
 
-                        <input type="radio" name="mem-type" id="membership-a" value="1" />
-                        <label for="membership-a">Gold </label>
-                    </div>
-                </label>
-                <input type="time" name="timestamp" id="timestamp" hidden="true" />
-                <label class="top" for="organization-desc">Business/Organization's description</label>
-                <textarea id="organization-desc" name="organization-desc" maxlength="30"></textarea>
-            </fieldset>
-            <input type="submit" value="Join" class="submitBtn">
-        </form>
-        <div class="benefits">
-            <p id="benefits">test</p>
+                            <input type="radio" name="memtype" id="membership-a" value="1" />
+                            <label for="membership-a">Gold </label>
+                        </div>
+                    </label>
+                    <input type="time" name="timestamp" id="timestamp" hidden="true" />
+                    <label class="top" for="organization-desc">Business/Organization's description</label>
+                    <textarea id="organization-desc" name="organization-desc" maxlength="30"></textarea>
+                </fieldset>
+                <input type="submit" value="Join" class="submitBtn">
+            </form>
         </div>
+
+        <section class="card benefitsection">
+            <h3>List of Membership Benefits</h3>
+            <p id="benefits"></p>
+        </section>
     </main>
 
 
@@ -103,11 +108,10 @@
                 <img src="images/instagram_icon.png" alt="instagram icon">
             </a>
         </div>
-
-        <script src="scripts/getdates.js"></script>
-        <script src="scripts/hamburgerbtn.js"></script>
-        <script src="scripts/scripts.js"></script>
     </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgerbtn.js"></script>
+    <script src="scripts/helper.js"></script>
 
 </body>
 
