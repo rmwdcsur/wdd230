@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development">
-    <meta name="description" content="Rivera's Chamber of Commerce site.">
+    <meta name="description" content="JOIN Chamber">
     <link rel="icon" href="images/favicon.ico">
-    <title>Rivera's Chamber of Commerce</title>
+    <title>JOIN Rivera's Chamber of Commerce</title>
     <meta property="og:title" content="WDD 230">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://aronda.com.br/wp-content/uploads/2018/09/83207753-1200x1200.jpg">
@@ -57,7 +57,7 @@
                     <label class="top">Business/Organization's name* <input type="text" id="organization"
                             name="organization" maxlength="30" required></label>
 
-                    <label class="membership" id="typelbl">Membership Type<div class="membership-types"
+                    <div class="membership" id="typelbl">Membership Type<div class="membership-types"
                             id="membershipTypes">
                             <input type="radio" name="memtype" id="membership-d" value="4" required />
                             <label for="membership-d">NP (none profit)</label>
@@ -71,7 +71,7 @@
                             <input type="radio" name="memtype" id="membership-a" value="1" />
                             <label for="membership-a">Gold </label>
                         </div>
-                    </label>
+                    </div>
                     <input type="time" name="timestamp" id="timestamp" hidden="true" />
                     <label class="top" for="organization-desc">Business/Organization's description</label>
                     <textarea id="organization-desc" name="organization-desc" maxlength="30"></textarea>
@@ -112,6 +112,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgerbtn.js"></script>
     <script src="scripts/helper.js"></script>
+    <script src="scripts/scripts.js"></script>
 
 </body>
 
