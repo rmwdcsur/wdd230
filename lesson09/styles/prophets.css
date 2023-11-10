@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+    color: rgb(62, 60, 189);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    padding: 1em;
+}
+
+div {
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(67, 182, 236);
+    padding: 1em;
+}
+
+/* Card styles */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.card {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5em;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    max-width: 340px;
+}
+
+.card h2 {
+    padding-top: 10px;
+    margin: auto;
+}
+
+.card img {
+    width: 340px;
+    height: 440px;
+    border-radius: 0 0 1em 1em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.75em;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
