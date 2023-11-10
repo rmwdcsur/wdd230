@@ -1,5 +1,8 @@
-// Code to show the benefits
+// variable for timestamp
+let timestamp = document.getElementById("timestamp");
+timestamp.value = Date.now();
 
+// Code to show the benefits
 var radioBtn = document.getElementsByName('memtype');//get a nodelist
 
 // loop through all of them
