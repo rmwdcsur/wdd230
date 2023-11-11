@@ -21,6 +21,23 @@
                     "title": "Design Principles Document"
                 }
             ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/Exercise3-CombinatorSelector.jpg",
+                    "title": "Combinator Ex."
+                },
+                {
+                    "url": "https://codepen.io/Santiago-Risso/pen/zYyaORb",
+                    "title": "Codepen"
+                },
+                {
+                    "url": "https://codepen.io/Santiago-Risso/pen/NWezYpB",
+                    "title": "Hamburger Btn"
+                }
+            ]
         }
     ]
 }
