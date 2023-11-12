@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Santiago Risso - WDD 230 - Web Frontend Development">
-    <meta name="description" content="Rivera's Chamber of Commerce Discover site.">
+    <meta name="description" content="Directory - Rivera's Chamber of Commerce site.">
     <link rel="icon" href="images/favicon.ico">
-    <title>Rivera's Chamber of Commerce Discover</title>
+    <title>Directory</title>
     <meta property="og:title" content="WDD 230">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://aronda.com.br/wp-content/uploads/2018/09/83207753-1200x1200.jpg">
@@ -36,35 +36,23 @@
             </ul>
         </nav>
     </header>
-    <div class="title">
-        <h1>
-            Discover Rivera's Chamber of Commerce
-        </h1>
-    </div>
-    <main class="discover">
-        <div class="cards">
-            <p class="card">
-                Message: <span class="visits"></span>
-            </p>
-            <p class="card">heading 2</p>
 
-            <div class="card calendar">
-                <p>Calendar</p>
-                <img src="images/calendar.jpg" alt="">
-            </div>
+    <main>
+        <h1 id="directorytitle">Chamber's Members</h1>
+        <div class="menu">
+            <br>
+            <button id="grid">🏁Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <hr>
+
+        <div>
+            <article class="directorygrid"></article>
         </div>
 
-
-        <div class="discover-images">
-            <img src="images/chamber-building.jpg" alt="" loading="lazy">
-            <img src="images/chamber-heroimg.jpg" alt="" loading="lazy">
-            <img src="images/chamber-building2.jpg" alt="" loading="lazy">
-            <img src="images/chamber-heroimg2.jpg" alt="" loading="lazy">
-            <img src="images/chamber-building3.jpg" alt="" loading="lazy">
-            <img src="images/chamber-heroimg3.jpg" alt="" loading="lazy">
+        <div>
+            <br>
         </div>
-
-
 
     </main>
 
@@ -91,12 +79,13 @@
             </a>
         </div>
 
-
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburgerbtn.js"></script>
+        <!-- <script src="scripts/scripts.js"></script> -->
+        <!-- <script src="scripts/windchill.js"></script> -->
+        <script src="scripts/data.js"></script>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburgerbtn.js"></script>
-    <script src="scripts/scripts.js"></script>
-    <!-- <script src="scripts/windchill.js"></script> -->
+
 </body>
 
 </html>

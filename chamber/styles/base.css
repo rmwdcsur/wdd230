@@ -343,3 +343,89 @@ form textarea {
     border-radius: 5px;
 
 }
+
+/* directory page */
+
+.directorysection {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+.directorygrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.directorygrid section {
+    text-align: center;
+}
+
+.directorygrid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.directorygrid section>* {
+    margin: 0.1rem;
+}
+
+.directoygrid h3 {
+    font-family: "Caveat", cursive;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+#directorytitle {
+    background-color: lightgray;
+    border-radius: 5px;
+    max-width: 20rem;
+    margin: auto;
+    margin-top: 1rem;
+}

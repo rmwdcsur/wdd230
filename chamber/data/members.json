@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "John",
+            "lastname": "Smith",
+            "title": "CEO",
+            "email": "allkajsdf@mycompany.com",
+            "phone": "12345678",
+            "organization": "My Company",
+            "membership": 1,
+            "description": "Recycling"
+        },
+        {
+            "name": "Diego",
+            "lastname": "Francia",
+            "title": "Operator",
+            "email": "wrekljf@topcars.com",
+            "phone": "123123123",
+            "organization": "Top Cars",
+            "membership": 1,
+            "description": "mechanic"
+        },
+        {
+            "name": "Anne",
+            "lastname": "Routenberg",
+            "title": "Architect",
+            "email": "aroutenberg@design.com",
+            "phone": "987654321",
+            "organization": "Design studio",
+            "membership": 2,
+            "description": "Design and construction company"
+        },
+        {
+            "name": "Bishan",
+            "lastname": "Joshi",
+            "title": "Sysadmin",
+            "email": "bjoshi@ptc.com",
+            "phone": "789123456",
+            "organization": "PTC",
+            "membership": 3,
+            "description": "Postal Technology Centre"
+        },
+        {
+            "name": "Bruno",
+            "lastname": "Flores",
+            "title": "Software Developer",
+            "email": "bruno.flores@UPU.com",
+            "phone": "987456312",
+            "organization": "Universal Union",
+            "membership": 4,
+            "description": "United Nation Agency - World Postal Organization"
+        },
+        {
+            "name": "Nathalia",
+            "lastname": "Gonzalez",
+            "title": "English Teacher",
+            "email": "nathalia.gonzalez@hotmail.com",
+            "phone": "111111111",
+            "organization": "Berlitz",
+            "membership": 4,
+            "description": "English as a second language"
+        },
+        {
+            "name": "Santiago",
+            "lastname": "Risso",
+            "title": "IT Manager",
+            "email": "hola@comeri.com",
+            "phone": "2222222222",
+            "organization": "COMERI",
+            "membership": 2,
+            "description": "Private Health company"
+        }
+    ]
+}
