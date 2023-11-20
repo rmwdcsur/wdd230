@@ -67,8 +67,22 @@
                 </section>
                 <section class="weather">
                     <h3>Weather Info:</h3>
-                    <p>The current temperature is: <span id="degrees">49</span>°F</p>
-                    <p>Current wind is: <span id="wind">12</span>km/h</p>
+                    <p>The current temperature is: <span id="current-temp"></span>&deg;F</p>
+                    <div id="forecast">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img id="weather-icon-tomorrow" src="" alt="">
+                            <figcaption id="tomorrow"></figcaption>
+                        </figure>
+                        <figure>
+                            <img id="weather-icon-twoDays" src="" alt="">
+                            <figcaption id="twoDays"></figcaption>
+                        </figure>
+                    </div>
+                    <p>Current wind is: <span id="wind"></span>m/h</p>
                     <p>It feels like: <span id="windchill"></span></p>
                 </section>
                 <section class="spotlights">
@@ -121,7 +135,6 @@
                 <img src="images/instagram_icon.png" alt="instagram icon">
             </a>
         </div>
-
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburgerbtn.js"></script>
         <script src="scripts/scripts.js"></script>

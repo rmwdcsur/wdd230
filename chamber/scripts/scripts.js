@@ -25,6 +25,8 @@ modeButton.addEventListener("click", () => {
     }
 });
 
+
+
 //calendar
 
 
@@ -64,3 +66,4 @@ if (visitDate.getFullYear() < 1970) {
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("dateVisited-ls", today);
+

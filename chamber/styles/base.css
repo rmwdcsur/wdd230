@@ -429,3 +429,31 @@ section a {
     margin: auto;
     margin-top: 1rem;
 }
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+}
+
+figure {
+    max-width: 4rem;
+}
+
+/* BANNER */
+.banner {
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px white solid;
+    max-width: 600px;
+    /* max-height: 35px; */
+    display: flex;
+}
+
+.banner button {
+    margin-top: 15px;
+    margin-left: 10px;
+    max-height: 30px;
+}
