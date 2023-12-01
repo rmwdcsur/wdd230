@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check whether it's Monday or Tuesday to show banner
     const day = dateObj.getDay();
     console.log(day);
-    if (day > 0 && day < 3) {
+    if (day > 0 && day < 4) {
         // Create container for banner
         let banner = document.createElement("section");
         banner.classList.add("banner");

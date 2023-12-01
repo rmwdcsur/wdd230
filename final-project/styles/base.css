@@ -1,0 +1,39 @@
+.icon {
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+}
+
+.hamburgerbtn {
+    display: block;
+    height: 2px;
+    margin-bottom: 3px;
+    transition: transform .25s, opacity .25s;
+    width: 18px;
+    background-color: #48487f;
+}
+
+
+@media (min-width: 640px) {
+    .navbar {
+        height: 64px;
+        justify-content: space-between;
+        padding: 0 66px;
+    }
+}
+
+.navbar {
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+    left: 0;
+    padding: 0 12px;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 5px grey;
+}
