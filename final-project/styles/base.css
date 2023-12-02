@@ -1,3 +1,8 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Extended');
+
+
 .icon {
     display: inline-block;
     flex-grow: 0;
@@ -16,6 +21,18 @@
     background-color: #48487f;
 }
 
+.closebtn1 {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.closebtn2 {
+    opacity: 0;
+}
+
+.closebtn3 {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
 
 @media (min-width: 640px) {
     .navbar {
@@ -23,17 +40,65 @@
         justify-content: space-between;
         padding: 0 66px;
     }
+
+    a {
+        font-size: 22px;
+    }
+
+    .side-menu {
+        top: 73px;
+    }
 }
 
 .navbar {
+    position: fixed;
     align-items: center;
     background: white;
     box-sizing: border-box;
     display: flex;
     height: 70px;
     left: 0;
-    padding: 0 12px;
+    /* padding: 0 12px; */
     top: 0;
     width: 100%;
     box-shadow: 0 0 5px grey;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Unlock';
+    color: #48487f;
+}
+
+.navbar-item-icon {
+    font-family: "Material Icons Extended";
+}
+
+.navbar-item {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding: 0px 14px;
+}
+
+.title {
+    flex-grow: 1;
+    padding: 0px 20px;
+}
+
+.side-menu {
+    background: white;
+    box-shadow: 0 0 5px grey;
+    height: 100%;
+    max-width: 80%;
+    position: fixed;
+    transition: transform .25s, opacity .25s;
+    width: 400px;
+    z-index: 45;
+    transform: none;
+    left: 0;
+}
+
+.hidden {
+    transform: translateX(-105%);
 }
