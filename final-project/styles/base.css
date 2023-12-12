@@ -8,7 +8,7 @@ body {
     min-width: 100%;
 }
 
-img {
+.img-container {
     margin-top: 2rem;
 }
 
@@ -16,6 +16,12 @@ main {
     display: flex;
     flex-flow: column;
     margin-top: 50px;
+}
+
+.main-section {
+    width: 100%;
+    min-width: 400px;
+    margin-right: 0;
 }
 
 .icon {
@@ -60,6 +66,7 @@ main {
     top: 0;
     width: 100%;
     box-shadow: 0 0 5px grey;
+
 }
 
 .navbar-text {
@@ -160,7 +167,6 @@ main {
     padding: 18px 54px;
     opacity: .8;
     border-radius: 5px;
-    /* z-index: -1; */
     position: relative;
 }
 
@@ -171,14 +177,11 @@ main {
     color: white;
     font-family: 'Domine', Arial, 'Times New Roman';
     margin-top: 15px;
-    /* text-align: center; */
-    width: 102%;
 }
 
 .close-btn {
     position: absolute;
     top: 4.7rem;
-    /* right: 2px; */
     cursor: pointer;
     margin-left: 20px;
 }
@@ -193,6 +196,8 @@ main {
     background: #f6f6f6;
     font-family: "Domine", serif;
     line-height: 1.5em;
+    text-align: center;
+    padding: 20px 6px;
 }
 
 .product-summary-title {
@@ -214,24 +219,27 @@ main {
 .weather-summary {
     font-family: "Domine", serif;
     line-height: 1.5em;
+    text-align: center;
+    padding: 20px 6px;
 }
 
 .general-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .general-info-item {
-    flex: 1;
-    margin: 0 28px 42px;
+    margin: 0 28px 22px;
 }
 
 .social-icons {
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    transition: transform .2s;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 auto;
     /* Animation */
+    transition: transform .2s;
 }
 
 .social-icons a {
@@ -245,10 +253,12 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    padding: 20px 0;
-    flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+}
 
+.address-title {
+    margin-top: 30px;
 }
 
 .address-btn {
@@ -257,22 +267,20 @@ footer {
     font-family: 'Domine';
     font-size: medium;
     color: #fff;
-    padding: 18px 54px;
+    padding: 10px 54px;
     margin: 0 0 20px;
     border-radius: 5px;
-    position: absolute;
 }
 
 .address {
     font-family: 'Domine';
-    top: 70px;
     position: relative;
     line-height: 1.5em;
+    margin-top: 30px;
 }
 
 .general-info-title {
     font-family: 'Domine';
-    margin: 0 0 24px;
 }
 
 .price-summary {
@@ -319,11 +327,9 @@ footer {
 }
 
 .card {
-    /* align-self: stretch; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* gap: 0.5em; */
     align-items: flex-start;
     border-radius: 5px;
     max-width: 340px;
@@ -345,8 +351,6 @@ footer {
 .card img {
     width: 250px;
     margin: auto;
-    /* height: 440px; */
-    /* border-radius: 0 0 1em 1em; */
 }
 
 .card p {
@@ -380,7 +384,6 @@ input:invalid {
 #formmessage {
     visibility: hidden;
     margin-top: 10px;
-    /*padding: 0.5rem; */
     color: red;
 }
 
@@ -438,8 +441,6 @@ form label.membership input {
     border-radius: 4px;
     gap: 1.5rem;
     color: #555;
-    /* width: 50%; */
-    /* max-width: 20rem; */
 }
 
 .membership {
@@ -468,7 +469,6 @@ form textarea {
     padding-bottom: 20px;
     margin-bottom: 10px;
     border-radius: 4px;
-    /* max-width: 20rem; */
     margin: auto;
 }
 
@@ -486,4 +486,13 @@ form textarea {
 .reservation-form {
     max-width: 350px;
     margin: 0 auto;
+}
+
+/* imbedded map */
+iframe {
+    width: 100%;
+    height: 225px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 0;
 }
