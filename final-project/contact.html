@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
-    <title>Home - Scoots Rental Cazumel</title>
+    <title>Contact - Scoots Rental Cazumel</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -26,25 +26,22 @@
             </div>
             <a target="_blank" href="sms:+1-987-100-4385" class="navbar-item alinks">
                 <span class="navbar-item-icon"></span>
-                <span class="navbar-text">Message Us</span>
+                <span>Message Us</span>
             </a>
             <a target="_blank" href="tel:+1-987-100-4385" class="navbar-item alinks">
                 <span class="navbar-item-icon"></span>
-                <span class="navbar-text">Call Now</span>
+                <span>Call Now</span>
             </a>
             <a target="_blank" href="https://maps.app.goo.gl/A8aD2PPrWXW6BP3s5" class="navbar-item alinks">
                 <span class="navbar-item-icon"></span>
-                <span class="navbar-text">Get Directions</span>
+                <span>Get Directions</span>
             </a>
         </nav>
     </header>
 
 
     <main>
-        <div id="max-temp-banner" class="max-temp-banner">
-            The max. temperature for today is <span id="max-temp"></span>
-            <span class="close-btn" onclick="closeBanner()">✖</span>
-        </div>
+
         <div class="side-menu hidden">
             <ul>
                 <li class="side-menu-li"><a href="index.html">Home</a></li>
@@ -58,62 +55,37 @@
 
         <div class="main-section">
             <div class="hero-title">
-
-                <h1>Scoots Rental Cazumel</h1>
-                <p class="hero-info">Scooter Rental Service in Downtown Cozumel</p>
-                <p class="hero-info">Opening at 8:00 AM everyday</p>
-                <div>
-                    <a href="reservations.html" class="hero-btn">Book Now</a>
-                </div>
-                <div class="img-container">
-                    <picture>
-                        <source srcset="./images/scooterphoto-xs.webp" media="(max-width: 640px)">
-                        <!-- <source srcset="./images/scooterphoto.webp" media="(max-width: 960px)"> -->
-                        <img src="./images/scooterphoto.webp" alt="scooter photo">
-                    </picture>
-                    <!-- <img src="./images/scooterphoto.webp" alt="scooter photo"> -->
-                </div>
+                <h2>Our Offices</h2>
             </div>
+
             <div class="product-summary">
                 <hr class="product-summary-division">
-                <h2 class="product-summary-title"> Rental information</h2>
-                Honda Motor Scooters
+                <h2 class="product-summary-title"> Where to find us</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7474.376690722558!2d-86.95185810470836!3d20.498503873612286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8f4e572811cd9a41%3A0xfcb3e8f9084bc342!2sSan%20Gervasio%20Park%2C%20colonia%2C%20115%20avenida%2C%20entre%20calles%20Jose%20Maria%20Morelos%20y%205%20sur%2C%20San%20Gervasio%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.492673!2d-86.9361613!4m5!1s0x8f4e59f757fe17ab%3A0xbaa9e03de8510edb!2sParque%20Municipal%20De%20Cozumel%2C%20Gonzalo%20Guerrero%2C%2077664%20Cozumel%2C%20Q.R.%2C%20Mexico!3m2!1d20.5045559!2d-86.95725519999999!5e0!3m2!1sen!2suy!4v1702380176152!5m2!1sen!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br>
                 <br>
-                Honda Metropolitan (49cc) - 1 person
-                <br>
-                Honda Dio (110cc) - 2 person
-                <br>
-                Honda PCX150 (149cc) - 2 person
-                <br>
-                <br>
-                Side-by-Side ATVs
-                <br>
-                <br>
-                Honda Pioneer 1000 - 4 person
-                <br>
-                Honda Pioneer 700 - 2 person
-                <br>
-                <br>
-                Jeeps
-                <br>
-                <br>
-                Jeep Wrangler - 4 door manuel with A/C - 5 person
-                <br>
-                Jeep Wrangler - 2 door - open air - manuel - 4 person
+                <h2 class="contact-us-title">Addresses</h2>
+                <ul>
+                    <li>Gonzalo Guerrero, 77664 Cozumel, Q.R., Mexico</li>
+                    <li>San Gervasio Park, 115 avenida, San Gervasio, Cozumel, Q.R., Mexico</li>
+                </ul>
             </div>
 
-            <div class="weather-summary">
+            <div class=" weather-summary reservation-form">
                 <hr class="product-summary-division">
-                <h2 class="product-summary-title"> Weather information</h2>
-                <h4>Current temperature in Cozumel is <span id="current-temp"></span></h4>
-                <h4>The Humidity is <span id="current-humidity"></span></h4>
-                Tomorrow's temperature @3pm: <span id="tomorrow-temp"></span>
-                <h4>Today's Weather Condition: <span id="weather-main"></span></h4>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+                <h2 class="contact-us-title"> Contact Us</h2>
+                <form name="joinForm" method="get" action="contactreceived.html">
+                    <label class="top">Name* <input type="text" name="firstname" maxlength="30" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@domain.com"
+                            pattern="[a-z0-9._%+\-]+@+[a-z]{2,10}\.[a-z]{2,}$"
+                            title="Please enter a valid email address" required></label>
+                    <label class="top" for="organization-desc">Question:</label>
+                    <textarea id="organization-desc" name="organization-desc" maxlength="30"></textarea>
+                    <input type="submit" value="Send" class="submitBtn">
+                </form>
             </div>
             <div class="general-info">
                 <div class="general-info-item">
@@ -198,7 +170,6 @@
 
 </body>
 <script src="scripts/animation.js"></script>
-<script src="scripts/script.js"></script>
 <script src="scripts/getdates.js"></script>
 
 </html>

@@ -1,0 +1,70 @@
+{
+    "products": [
+        {
+            "maker": "Honda",
+            "model": "Metro",
+            "type": "Scooter",
+            "capacity": 1,
+            "resprice": 20,
+            "price": 25,
+            "resprice1day": 30,
+            "price1day": 35,
+            "photo": "./images/01.webp"
+        },
+        {
+            "maker": "Honda",
+            "model": "Dio",
+            "type": "Scooter",
+            "capacity": 2,
+            "resprice": 30,
+            "price": 35,
+            "resprice1day": 40,
+            "price1day": 45,
+            "photo": "./images/02.webp"
+        },
+        {
+            "maker": "Honda",
+            "model": "PCX150",
+            "type": "Scooter",
+            "capacity": 2,
+            "resprice": 40,
+            "price": 45,
+            "resprice1day": 50,
+            "price1day": 55,
+            "photo": "./images/03.webp"
+        },
+        {
+            "maker": "Honda",
+            "model": "Pioneer",
+            "type": "ATV",
+            "capacity": 4,
+            "resprice": 50,
+            "price": 60,
+            "resprice1day": 70,
+            "price1day": 80,
+            "photo": "./images/04.webp"
+        },
+        {
+            "maker": "Jeep",
+            "model": "Wrangler 2 door",
+            "type": "Jeep",
+            "capacity": 4,
+            "resprice": 60,
+            "price": 70,
+            "resprice1day": 85,
+            "price1day": 90,
+            "photo": "./images/06.webp"
+        },
+        {
+            "maker": "Jeep",
+            "model": "Wrangler 4 door with a/c",
+            "type": "Jeep",
+            "capacity": 5,
+            "resprice": 70,
+            "price": 85,
+            "resprice1day": 100,
+            "price1day": 125,
+            "photo": "./images/05.webp"
+        }
+    ]
+}

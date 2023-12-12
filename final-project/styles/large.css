@@ -1,0 +1,26 @@
+@media (min-width: 900px) {
+    .product-summary {
+        padding: 120px;
+    }
+
+    .weather-summary {
+        padding: 120px;
+    }
+
+    .price-summary {
+        padding: 60px;
+    }
+
+    .navbar {
+        padding: 0 66px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-info {
+        font-size: 20px;
+    }
+
+}

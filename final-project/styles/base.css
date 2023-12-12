@@ -1,10 +1,21 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Extended');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+body {
+    font-family: 'Domine';
+    min-width: 100%;
+}
+
+img {
+    margin-top: 2rem;
+}
 
 main {
     display: flex;
     flex-flow: column;
+    margin-top: 50px;
 }
 
 .icon {
@@ -37,27 +48,6 @@ main {
     transform: translateY(-5px) rotate(-45deg);
 }
 
-
-@media (min-width: 640px) {
-    .navbar {
-        height: 64px;
-        justify-content: space-between;
-        padding: 0 66px;
-    }
-
-    a {
-        font-size: 22px;
-    }
-
-    .side-menu {
-        top: 73px;
-    }
-
-    /* .title {
-        /* font-size: 56px; */
-    /*}*/
-}
-
 .navbar {
     position: fixed;
     align-items: center;
@@ -66,16 +56,35 @@ main {
     display: flex;
     height: 70px;
     left: 0;
-    /* padding: 0 12px; */
+    z-index: 1;
     top: 0;
     width: 100%;
     box-shadow: 0 0 5px grey;
 }
 
-a {
+.navbar-text {
+    font-size: 0;
+}
+
+.navbar-item-icon {
+    font-size: 22px;
+}
+
+.alinks {
     text-decoration: none;
     font-family: 'Unlock';
     color: #48487f;
+}
+
+.address-btn:hover,
+.hero-btn:hover {
+    text-decoration: none;
+    /* font-family: 'Unlock'; */
+    background-color: #5f5f63;
+}
+
+.social-icons a:hover {
+    filter: grayscale(100%);
 }
 
 .navbar-item-icon {
@@ -86,7 +95,8 @@ a {
     font-size: 17px;
     text-transform: capitalize;
     font-weight: lighter;
-    padding: 0px 14px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .title {
@@ -107,19 +117,34 @@ a {
     left: 0;
 }
 
+.side-menu-li {
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.side-menu-li a {
+    font-family: "Domine", serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: #48487f;
+}
+
 .hidden {
     transform: translateX(-105%);
 }
 
 .hero-title {
     color: #48487f;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    margin: 80px 0px;
+    margin: 40px 0px;
 }
 
 .hero-info {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0px;
 }
 
@@ -130,7 +155,335 @@ a {
 .hero-btn {
     background-color: #48487f;
     text-decoration: none;
-    font-family: 'Unlock';
+    font-family: 'Domine';
     color: #fff;
     padding: 18px 54px;
+    opacity: .8;
+    border-radius: 5px;
+    /* z-index: -1; */
+    position: relative;
+}
+
+.max-temp-banner {
+    padding: 0.5rem;
+    font-size: 15px;
+    background-color: darkred;
+    color: white;
+    font-family: 'Domine', Arial, 'Times New Roman';
+    margin-top: 15px;
+    /* text-align: center; */
+    width: 102%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4.7rem;
+    /* right: 2px; */
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.product-summary-division {
+    border: 1px solid black;
+    margin: 0 auto 16px;
+    width: 50px;
+}
+
+.product-summary {
+    background: #f6f6f6;
+    font-family: "Domine", serif;
+    line-height: 1.5em;
+}
+
+.product-summary-title {
+    font-family: "Domine", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0 0 48px;
+    text-align: center;
+}
+
+.contact-us-title {
+    font-family: "Domine", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.weather-summary {
+    font-family: "Domine", serif;
+    line-height: 1.5em;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info-item {
+    flex: 1;
+    margin: 0 28px 42px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transition: transform .2s;
+    /* Animation */
+}
+
+.social-icons a {
+    margin-top: 10px;
+}
+
+footer {
+    align-items: center;
+    border-top: 0.25px solid #b5b5b5;
+    color: #b5b5b5;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px 0;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.address-btn {
+    background-color: #48487f;
+    text-decoration: none;
+    font-family: 'Domine';
+    font-size: medium;
+    color: #fff;
+    padding: 18px 54px;
+    margin: 0 0 20px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.address {
+    font-family: 'Domine';
+    top: 70px;
+    position: relative;
+    line-height: 1.5em;
+}
+
+.general-info-title {
+    font-family: 'Domine';
+    margin: 0 0 24px;
+}
+
+.price-summary {
+    margin-bottom: 2em;
+    background: #f6f6f6;
+    font-family: "Domine", serif;
+    line-height: 1.5em;
+}
+
+.pricing {
+    color: #48487f;
+    padding-left: 2em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table tr:nth-child(1) {
+    background-color: #48487f;
+    color: white;
+    text-align: center;
+}
+
+/****************** CARDS CSS ********************/
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.card {
+    /* align-self: stretch; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* gap: 0.5em; */
+    align-items: flex-start;
+    border-radius: 5px;
+    max-width: 340px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    padding-top: 10px;
+    margin: auto;
+}
+
+.card img {
+    width: 250px;
+    margin: auto;
+    /* height: 440px; */
+    /* border-radius: 0 0 1em 1em; */
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.75em;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+
+/* FORM */
+input:valid {
+    background-color: lightgreen;
+    color: black;
+}
+
+input:invalid {
+    background-color: pink;
+    color: black;
+}
+
+#formmessage {
+    visibility: hidden;
+    margin-top: 10px;
+    /*padding: 0.5rem; */
+    color: red;
+}
+
+.form h1 {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9c2c13;
+}
+
+/* ------------ FORM  ----------------------------------*/
+form fieldset {
+    margin: 2rem 1rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+form label.membership input {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+
+}
+
+.product-types {
+    display: flex;
+    margin: auto;
+    font-size: 1rem;
+    border-radius: 4px;
+    gap: 1.5rem;
+    color: #555;
+    /* width: 50%; */
+    /* max-width: 20rem; */
+}
+
+.membership {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #48487f;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 20px auto;
+    margin-left: 8em;
+    max-width: 20rem;
+    justify-content: center;
+}
+
+form textarea {
+    display: block;
+    width: 100%;
+    height: 8em;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    /* max-width: 20rem; */
+    margin: auto;
+}
+
+
+.benefitsection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
+    height: 200px;
+    background-color: #8ea8c3;
+    border-radius: 5px;
+}
+
+.reservation-form {
+    max-width: 350px;
+    margin: 0 auto;
 }
