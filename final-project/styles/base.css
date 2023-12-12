@@ -327,6 +327,7 @@ footer {
 }
 
 .card {
+    color: #551a8b;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
