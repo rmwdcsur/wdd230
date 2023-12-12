@@ -6,6 +6,15 @@
         text-align: left;
     }
 
+    .top {
+        text-align: center;
+    }
+
+    .product-types {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
     .weather-summary {
         padding: 120px;
         max-width: 650px;
