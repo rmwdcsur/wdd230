@@ -27,7 +27,7 @@ async function apiFetchForecast() {
         const response = await fetch(urlForecast);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             // tomorrow values commented to get diversity
             // tomorrowIcon = data.list[0].weather[0].icon;
             // tomorrowDesc = data.list[0].weather[0].description;
@@ -56,7 +56,7 @@ async function apiFetch() {
         // const response = await fetch(urlForecast);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             delay(1000).then(() => {
                 // console.log("I wait until it's loaded");
                 displayResults(data);
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Check whether it's Monday or Tuesday to show banner
     const day = dateObj.getDay();
-    console.log(day);
+    // console.log(day);
     if (day > 0 && day < 4) {
         // Create container for banner
         let banner = document.createElement("section");
